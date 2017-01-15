@@ -41,7 +41,7 @@ class Navigation:
         # Container for the next subtarget. Holds the index of the next subtarget
         self.next_subtarget = 0
 
-        self.count_limit = 400 # 20 sec
+        self.count_limit = 200 # 20 sec
 
         self.counter_to_next_sub = self.count_limit
 

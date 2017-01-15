@@ -95,17 +95,15 @@ class TargetSelection:
 	tinit=time.time()
 	next_target=[0,0]
 	a=[]
-	for x in range(0,ogm.shape[0]):
+	for x in range(0,ogm.shape[0]:
 		for y in range(0,ogm.shape[1]):
 			temp=(brushogm[x][y]-5)*0.6+(ogm[x][y]-50)*0.2+(coverage[x][y]-50)*0.2
 			a.append(temp)
 	c=a.index(min(a))
 	if ogm.shape[0]>=ogm.shape[1]:
-		next_target=[c%ogm.shape[0],c/ogm.shape[0]]
+		next_target=[c%ogm.shape[0],c/ogm.shape[0])
 	else:
 		next_target=[c/ogm.shape[0],c%ogm.shape[0]]
-	Print.art_print("Select  target time: " + str(time.time() - tinit), \
-            Print.ORANGE)
 	return next_target
 
     def selectRandomTarget(self, ogm, coverage, brushogm, ogm_limits):
